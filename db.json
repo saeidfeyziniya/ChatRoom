@@ -1,0 +1,71 @@
+{
+    "privateGroup":[
+        {
+            "groupName":"پنج شیر",
+            "lastMessageText":"این متن صرفا یک متن تستی برا ی این قسمت می باشد",
+            "lastMessageTime":" 30 دقیقه پیش",
+            "unSeen":"3",
+            "active":"no"
+        },
+        {
+            "groupName":"پیچاز",
+            "lastMessageText":"این متن صرفا یک متن تستی برا ی این قسمت می باشد",
+            "lastMessageTime":"4 ساعت پیش",
+            "unSeen":"0",
+            "active":"no"
+        },
+        {
+            "groupName":"گرافیک",
+            "lastMessageText":"این متن صرفا یک متن تستی برا ی این قسمت می باشد",
+            "lastMessageTime":"2 روز پیش",
+            "unSeen":"0",
+            "active":"no"
+        },
+        {
+            "groupName":"توسعه دهنده",
+            "lastMessageText":"این متن صرفا یک متن تستی برا ی این قسمت می باشد",
+            "lastMessageTime":"1 هفته پیش",
+            "unSeen":"0",
+            "active":"no"
+        },
+        {
+            "groupName":"شوروی",
+            "lastMessageText":"این متن صرفا یک متن تستی برا ی این قسمت می باشد",
+            "lastMessageTime":"1 ماه پیش",
+            "unSeen":"0",
+            "active":"no"
+        },
+        {
+            "groupName":"صعودی",
+            "lastMessageText":"این متن صرفا یک متن تستی برا ی این قسمت می باشد",
+            "lastMessageTime":"2 ماه پیش",
+            "unSeen":"0",
+            "active":"no"
+        },
+        {
+            "groupName":"مثنوی",
+            "lastMessageText":"این متن صرفا یک متن تستی برا ی این قسمت می باشد",
+            "lastMessageTime":"10 روز پیش",
+            "unSeen":"0",
+            "active":"no"
+        }
+        
+    ],
+    "publicGroup":[
+        {
+            "groupName":"3 تفنگ دار",
+            "lastMessageText":"این متن صرفا یک متن تستی برا ی این قسمت می باشد",
+            "lastMessageTime":"4 ساعت پیش",
+            "unSeen":"0",
+            "active":"yes"
+        },
+        {
+            "groupName":"شیران",
+            "lastMessageText":"این متن صرفا یک متن تستی برا ی این قسمت می باشد",
+            "lastMessageTime":"9 ساعت پیش",
+            "unSeen":"0",
+            "active":"no"
+        }
+        
+    ]
+}
