@@ -63,7 +63,7 @@ const useStyle = makeStyles((theme) =>({
                 ,
                 [theme.breakpoints.down('xs')]:{
                     margin:'40px 0 20px',
-                    width:'350px',
+                    width:'280px',
                 }
         },
         registerBtn:{
@@ -86,7 +86,7 @@ const useStyle = makeStyles((theme) =>({
                 }
                 ,
                 [theme.breakpoints.down('xs')]:{
-                    width:'350px',
+                    width:'280px',
                     marginBottom:'50px'
                 }
         },

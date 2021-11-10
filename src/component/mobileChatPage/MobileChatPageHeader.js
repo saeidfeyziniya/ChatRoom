@@ -1,24 +1,27 @@
 
-import { ButtonBase, Grid, Typography } from "@material-ui/core";
+import {  Grid } from "@material-ui/core";
 import React from "react";
+import { useChatState } from "../chatPage/context/chatContext";
+import HeaderDefault from "./component/HeaderDefault";
+import HeaderGroup from "./component/HeaderGroup";
 import useStyle from "./styles";
 
 
 function MobileChatPageHeader() {
   const classes = useStyle();
+
+  const chatState = useChatState();
+
+  const setHeader =()=>{
+    if(chatState.mobileState === "newGroup" || chatState.mobileState === "groups"){
+      return <HeaderDefault/>
+    }else{
+      return <HeaderGroup/>
+    }
+  }
   return (
     <Grid container direction={"column"} className={classes.chatPageHeader}>
-        <Grid container item className={classes.rightHeader}>
-            <Typography className={classes.headerTitle}>پیام ها <span className={classes.crlUnSeenMessageAll}>3</span>
-            </Typography>
-        </Grid>
-        <Grid container item className={classes.leftHeader}>
-            <Typography className={'cl'}>
-                <ButtonBase>
-                    <img src={"/images/blueExit.png"} alt={"exit"}/>
-                </ButtonBase>
-            </Typography>
-        </Grid>
+        {setHeader()}
     </Grid>
   );
 }

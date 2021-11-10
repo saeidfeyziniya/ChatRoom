@@ -2,20 +2,26 @@
 import { ButtonBase, Grid, Typography } from "@material-ui/core";
 import React from "react";
 import useStyle from "../styles";
+import { useChatDispatch ,setMobileState } from "../../chatPage/context/chatContext";
 
 
 
 function MobileChatGroupItem(props) {
   const classes = useStyle();
   
+  const chatDispatch = useChatDispatch();
+
   const unSeenChat = props.unSeen > 0 ? classes.crlChatDiv + ' '  + classes.unSeenChat : props.active === "yes" ? 
   classes.crlChatDiv + ' ' + classes.activeChat : classes.crlChatDiv;
 
+  const showMessage = () => {
+    setMobileState(chatDispatch , "messagesChat");
+  }
   
   return (
     
     <Grid container item>
-    <ButtonBase className={unSeenChat}>
+    <ButtonBase className={unSeenChat} onClick={showMessage}>
       <Grid container item  className={classes.crlChatDivTitle} >
         <Typography className={classes.crlChatGroupName}>{props.groupName}</Typography>
         <Typography className={classes.crlChatGroupLastTime}>{props.lastMessageTime}</Typography>

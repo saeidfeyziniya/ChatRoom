@@ -7,6 +7,8 @@ function chatReducer(state, action) {
   switch (action.type) {
     case "JoinChat":
       return {...state, chatBoxState: "passwordChat"};
+    case "MobileState":
+      return {...state, mobileState: action.payload};
     default: {
       throw new Error(`Unhandled action type: ${action.type}`);
     } 
@@ -16,6 +18,7 @@ function chatReducer(state, action) {
 function ChatProvider({children}) {
   var [state, dispatch] = React.useReducer(chatReducer, {
     chatBoxState:"empty",
+    mobileState:"groups"
     
   });
   return (
@@ -43,7 +46,7 @@ function useChatDispatch() {
   return context;
 }
 
-export { ChatProvider, useChatState, useChatDispatch,setJoinToChat,
+export { ChatProvider, useChatState, useChatDispatch,setJoinToChat,setMobileState
           
         };
 
@@ -53,5 +56,13 @@ function setJoinToChat(dispatch , val) {
     type: "JoinChat",
     payload:val
   });
+  
+}
+function setMobileState(dispatch , val) {
+  dispatch({
+    type: "MobileState",
+    payload:val
+  });
+  
 }
 

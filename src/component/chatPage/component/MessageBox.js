@@ -10,7 +10,7 @@ function MessageBox() {
 
   const {chatBoxState} = useChatState()
     
-
+ 
   const renderChatBox = () =>{
     if(chatBoxState === "empty"){
       return <EmptyMessageBox/>
@@ -27,7 +27,9 @@ function MessageBox() {
             {/* {
               renderChatBox()
             } */}
-            <Messages/>
+            
+            <Messages />
+
         </Grid>
   );
 }

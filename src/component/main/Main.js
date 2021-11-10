@@ -37,7 +37,9 @@ function Main() {
                 </Grid>
                 <Grid container item className={classes.textEndItems}>
                     <Typography className={classes.topTextEnd}>هر چی می خوای بگو !</Typography>
-                    <Typography className={classes.bottomTextEnd}>متن ، پیام صوتی ، تصویر ، ویدئو و هر چیزی دیگه ای که به ذهنت میرسه رو با دوستانت به اشتراک بزار !</Typography>
+                    <Typography className={classes.bottomTextEnd}>متن ، پیام صوتی ، تصویر ، ویدئو
+                     و هر چیزی دیگه ای که به ذهنت میرسه
+                     رو با دوستانت به اشتراک بزار !</Typography>
                 </Grid>
             </Grid>
             <Grid container item className={classes.imgSectionItems} direction={"column"}>

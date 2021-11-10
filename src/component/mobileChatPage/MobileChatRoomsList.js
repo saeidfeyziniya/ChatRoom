@@ -1,11 +1,17 @@
 import {  ButtonBase, Grid, Typography } from "@material-ui/core";
 import React from "react";
+import { setMobileState, useChatDispatch } from "../chatPage/context/chatContext";
 import MobileChatGroupItem from "./component/MobileChatGroupItem";
 import useStyle from "./styles";
 
 
 function MobileChatRoomsList() {
   const classes = useStyle();
+
+  const chatDispatch = useChatDispatch();
+  const addGroup = () => {
+   setMobileState(chatDispatch , "newGroup");
+  }
 
   return (
    <Grid container direction={"row"} className={classes.crlDiv}>
@@ -49,7 +55,7 @@ function MobileChatRoomsList() {
         <hr className={classes.crlHr} color={'#EEF0F2'}/>
 
      </Grid>
-     <ButtonBase className={classes.groupPlusSection}>
+     <ButtonBase className={classes.groupPlusSection} onClick={addGroup}>
         <img src={"/images/plus.png"} alt={"plusImage"} style={{width:'20px',height:'20px'}}/>
      </ButtonBase>
     

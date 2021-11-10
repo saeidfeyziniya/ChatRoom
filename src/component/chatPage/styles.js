@@ -156,8 +156,8 @@ const useStyle = makeStyles((theme) =>({
        mcChatBox:{
            height:'85%',
            display:'flex',
-           alignContent:'flex-start',
-           overflow:'scroll',  
+           alignContent:'flex-end',
+           overflow:'auto',  
            paddingTop: '20px'
            
        },

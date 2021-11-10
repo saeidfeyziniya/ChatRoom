@@ -11,6 +11,7 @@ import useStyle from "./styles";
 function MobileMessagesChat() {
   const classes = useStyle();
   
+  
 
   return (
     <div className={classes.chatSection}>

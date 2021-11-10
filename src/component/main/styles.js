@@ -77,7 +77,7 @@ const useStyle = makeStyles((theme)=>({
             }
            ,
            [theme.breakpoints.down('xs')]:{
-            fontSize:'19px',
+            fontSize:'15px',
             fontWeight:'600',
             marginTop:'50px'
            }
@@ -112,16 +112,20 @@ const useStyle = makeStyles((theme)=>({
        imgSection:{
            backgroundColor:'#EBF3FA',
            width:'100%',
-           justifyContent:'center'
-       },
-       imgSectionItems:{
-           width: '420px',
-           height: '550px',
-           backgroundColor:'#fff',
-           margin:'40px 50px',
-           borderRadius:'20px',
-           display:'flex',
-           alignItems:'center'
+           justifyContent:'center',
+        },
+        imgSectionItems:{
+            width: '420px',
+            height: '550px',
+            backgroundColor:'#fff',
+            margin:'40px 50px',
+            borderRadius:'20px',
+            display:'flex',
+            alignItems:'center',
+            [theme.breakpoints.down('xs')]:{
+             width:'95%',
+             margin:'20px 0px',
+            }
        },
        imageEndItems:{
            width:'90%',
@@ -143,7 +147,12 @@ const useStyle = makeStyles((theme)=>({
            fontFamily:'iransans',
            textAlign:'center',
            fontWeight: '800',
-           marginTop:'10px'
+           marginTop:'10px',
+           [theme.breakpoints.down('xs')]:{
+            fontSize:'12px',
+            
+           }
+
        },
        bottomTextEnd:{
            width:'100%',

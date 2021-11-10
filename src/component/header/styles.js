@@ -16,8 +16,9 @@ const useStyle = makeStyles((theme) => ({
             display:'flex',
             justifyContent:'center',
             alignItems: 'center',
-            width:'967px',
+            width:'100%',
             height:'36px',
+           
             
        },
        navBtn:{
@@ -35,7 +36,7 @@ const useStyle = makeStyles((theme) => ({
            color:'#5E5E5E',
            
            [theme.breakpoints.down('sm')]:{
-            marginLeft:'50px',
+            marginLeft:'10px',
         }
        },
        headNavItemEnd:{

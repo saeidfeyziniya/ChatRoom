@@ -13,6 +13,12 @@ function Messages() {
     <>
         <OthersMessage text={myMessageText + ' ' + myMessageText + ' ' + myMessageText}/>
         <MyMessage text={myMessageText + ' ' + myMessageText + ' ' + myMessageText + ' ' + myMessageText + ' ' + myMessageText}/>
+        <OthersMessage text={myMessageText + ' ' + myMessageText + ' ' + myMessageText}/>
+        <MyMessage text={myMessageText + ' ' + myMessageText + ' ' + myMessageText + ' ' + myMessageText + ' ' + myMessageText}/>
+        <OthersMessage text={myMessageText + ' ' + myMessageText + ' ' + myMessageText}/>
+        <MyMessage text={myMessageText + ' ' + myMessageText + ' ' + myMessageText + ' ' + myMessageText + ' ' + myMessageText}/>
+        <OthersMessage text={myMessageText + ' ' + myMessageText + ' ' + myMessageText}/>
+        <MyMessage text={myMessageText + ' ' + myMessageText + ' ' + myMessageText + ' ' + myMessageText + ' ' + myMessageText}/>
             
     </>
   );

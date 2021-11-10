@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/styles";
 const useStyle = makeStyles({
     chatPageHeader:{
            width:'100%',
-           height:'60px',
+           height:'55px',
            backgroundColor:'#fff',
            padding:'15px 25px',
            marginBottom:'5px'
@@ -174,9 +174,97 @@ const useStyle = makeStyles({
     },
     //create group styles
     createGroupDiv:{
-        flex:1
+        flex:1,
+        backgroundColor:'#F9F9FB',
+    
+        justifyContent:'center',
+        alignItems:'center'
+        
     },
     
+    addGroupButton:{
+        margin:'auto',
+        marginBottom:'25px',
+        backgroundColor:'#fff',
+        width:'85%',
+        borderRadius:'0',
+        padding:'15px 20px',
+        fontSize:'14px',
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'space-between',
+        
+    },
+    addGroupName:{
+        margin:'auto',
+        marginBottom:'15px',
+        backgroundColor:'#fff',
+        width:'73%',
+        borderRadius:'0',
+        padding:'15px 20px',
+        fontSize:'14px',
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'space-between',
+    },
+    addInputText:{
+        '&:focus':{
+            outline:'none'
+        },
+        width:'100%',
+        fontSize:'13px',
+        fontFamily:'iransansNumber',
+        border:'none',
+    },
+    addInputPass:{
+    },
+    addButtonImage:{
+        width:'15px',
+        height:'15px',
+    },
+    addButtonTest:{
+        fontFamily:'iransans',
+        fontSize:'12px'
+    },
+    share:{
+        margin:'auto',
+        width:'80%',
+        display:'flex',
+        flexDirection:'column' ,
+        alignItems:'center',
+        marginTop:'20px'
+    },
+    shareText:{
+        fontFamily:'iransans',
+        fontSize:'14px',
+        color:'#757575'
+
+    },
+    ButtonsHead:{
+        display:'flex',
+        flexDirection:'row'
+    },
+    shareButton:{
+        width:'80%',
+        padding:'15px',
+        backgroundColor:'#5489DD',
+        color:'#fff',
+        borderRadius:'0',
+        marginTop:'20px',
+        marginBottom:'20px',
+
+    },
+    backImg:{
+        width:'15px',
+        height:'20px',
+    },
+    shareIs:{
+        fontFamily:'iransans',
+        fontSize:'12px',
+        color:'#5489DD',
+        width:'max-content',
+        height:'100%'
+    }
 });
 
 export default useStyle;

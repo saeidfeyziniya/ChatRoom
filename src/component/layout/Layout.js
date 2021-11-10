@@ -8,6 +8,7 @@ import { NewGroupProvider } from "../plusSection/context/NewGroupContext";
 import MobileLogin from "../../pages/MobileLogin";
 import MobileRegister from "../../pages/MobileRegister";
 import MobileChatPage from "../../pages/MobileChatPage";
+import { ChatProvider } from "../chatPage/context/chatContext";
 
 
 
@@ -21,13 +22,16 @@ function Layout() {
     <Grid container className={classes.root}>
       <BrowserRouter>
       <NewGroupProvider>
-        <Switch>
-        <Route exact path={"/mLogin"} component={MobileLogin}/>
-        <Route exact path={"/mRegister"} component={MobileRegister}/>
-        
-        <Route exact path={"/ChatPage"} component={ width < 600 ? MobileChatPage : ChatPage}/>
-        <Route component={Home} />
-        </Switch>
+        <ChatProvider>
+
+          <Switch>
+          <Route exact path={"/mLogin"} component={MobileLogin}/>
+          <Route exact path={"/mRegister"} component={MobileRegister}/>
+            <Route exact path={"/ChatPage"} component={ width < 600 ? MobileChatPage : ChatPage}/>
+          <Route component={Home} />
+          </Switch>
+        </ChatProvider>
+
       </NewGroupProvider>
       </BrowserRouter>
     </Grid>
