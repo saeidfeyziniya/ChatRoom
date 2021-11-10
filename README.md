@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# about project
+
+you can use this url '/chatRoom' for seeing chatroom box
+
+for checking all section you must change some parts because that project is just for test
+
+you can ask me about this project via email
+
+saeid.feyziniya1961@gmail.com
+ 
